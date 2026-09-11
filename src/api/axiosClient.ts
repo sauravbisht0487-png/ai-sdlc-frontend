@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-  baseURL: "http://localhost:4000/api", // matches your backend's port
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:4000/api",
 });
 
 // Automatically attach the JWT to every outgoing request, if one exists
