@@ -8,6 +8,7 @@ import { ToastProvider } from "./context/ToastContext.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
+    const brokenTest: string = 12345;
     <BrowserRouter>
     <ToastProvider>
       <AuthProvider>
